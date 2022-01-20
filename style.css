@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.conteiner {
+	background-image: url("./img/fon_games.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+  display: flex;
+  position: relative;		
+}
+
+.timers {
+  font-size: 72px;
+  width: 30px;
+  padding-top: 70px;
+  padding-left: 50px;
+}
+
+.games__lug {
+  width: 700px;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.memory__game {
+  width: 100%;
+  height: 95%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.memory__card {
+  width: calc(25% - 10px);
+  height: calc(25% - 10px);
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+
+.memory__card:active {
+  transform: scale(0.9);
+  transition: transform .2s;
+}
+
+.memory__card.flip {
+  transform: rotateY(180deg);
+}
+
+.front__face {
+  transform: rotateY(180deg);
+}
+
+.front__face,
+.back__face {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  position: absolute;
+  border-radius: 15px;
+  background: #000;
+  backface-visibility: hidden;
+}
+
+.modal {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  background-color: black;
+  opacity: .9;
+}
+
+.restart {
+  display: block;
+}
+
+.modal__block {
+  margin-left: auto;
+  margin-right: auto;
+  width: 550px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal__h2 {
+  font-size: 48px;
+  color: gold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.modal__btn {
+  background-color: gold;
+  color: black;
+  font-size: 36px;
+  border-radius: 15px;
+  padding: 20px 50px;
+}
+
+
+
+
+

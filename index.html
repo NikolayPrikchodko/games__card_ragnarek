@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RagnarocK</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="games.js"></script>
+</head>
+
+<body class="conteiner">
+
+  <div class="modal">
+    <div class="modal__block">
+     <h2 class="modal__h2">Попробуешь снова человек...</h2>
+    <button class="modal__btn">Играть снова!</button> 
+    </div>    
+  </div>
+  <div class="timers"></div>
+  <div class="games__lug">
+    <ul class="memory__game">
+    <li class="memory__card" data-ragnar="viking">
+      <img class="front__face" src="img/card_1.jpg" alt="viking">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="viking">
+      <img class="front__face" src="img/card_1.jpg" alt="viking">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="odin">
+      <img class="front__face" src="img/card_2.jpg" alt="odin">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="odin">
+      <img class="front__face" src="img/card_2.jpg" alt="odin">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="krest">
+      <img class="front__face" src="img/card_3.jpg" alt="krest">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="krest">
+      <img class="front__face" src="img/card_3.jpg" alt="krest">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="trio">
+      <img class="front__face" src="img/card_4.jpg" alt="trio">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="trio">
+      <img class="front__face" src="img/card_4.jpg" alt="trio">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="buls">
+      <img class="front__face" src="img/card_5.jpg" alt="buls">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="buls">
+      <img class="front__face" src="img/card_5.jpg" alt="buls">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="infinity">
+      <img class="front__face" src="img/card_6.jpg" alt="infinity">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="infinity">
+      <img class="front__face" src="img/card_6.jpg" alt="infinity">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_1">
+      <img class="front__face" src="img/card_7.jpg" alt="runa_1">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_1">
+      <img class="front__face" src="img/card_7.jpg" alt="runa_1">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_2">
+      <img class="front__face" src="img/card_8.jpg" alt="runa_2">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_2">
+      <img class="front__face" src="img/card_8.jpg" alt="runa_2">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <!-- <li class="memory__card" data-ragnar="runa_3">
+      <img class="front__face" src="img/card_9.jpg" alt="runa_3">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_3">
+      <img class="front__face" src="img/card_9.jpg" alt="runa_3">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_4">
+      <img class="front__face" src="img/card_10.jpg" alt="runa_4">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_4">
+      <img class="front__face" src="img/card_10.jpg" alt="runa_4">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_5">
+      <img class="front__face" src="img/card_11.jpg" alt="runa_5">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_5">
+      <img class="front__face" src="img/card_11.jpg" alt="runa_5">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_6">
+      <img class="front__face" src="img/card_12.jpg" alt="runa_6">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_6">
+      <img class="front__face" src="img/card_12.jpg" alt="runa_6">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_7">
+      <img class="front__face" src="img/card_13.jpg" alt="runa_7">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_7">
+      <img class="front__face" src="img/card_13.jpg" alt="runa_7">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_8">
+      <img class="front__face" src="img/card_14.jpg" alt="runa_8">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_8">
+      <img class="front__face" src="img/card_14.jpg" alt="runa_8">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_9">
+      <img class="front__face" src="img/card_15.jpg" alt="runa_9">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_9">
+      <img class="front__face" src="img/card_15.jpg" alt="runa_9">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_10">
+      <img class="front__face" src="img/card_16.jpg" alt="runa_10">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_10">
+      <img class="front__face" src="img/card_16.jpg" alt="runa_10">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li> -->
+    <!-- <li class="memory__card" data-ragnar="runa_11">
+      <img class="front__face" src="img/card_17.jpg" alt="runa_11">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_11">
+      <img class="front__face" src="img/card_17.jpg" alt="runa_11">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_12">
+      <img class="front__face" src="img/card_18.jpg" alt="runa_12">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_12">
+      <img class="front__face" src="img/card_18.jpg" alt="runa_12">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_13">
+      <img class="front__face" src="img/card_19.jpg" alt="runa_13">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_13">
+      <img class="front__face" src="img/card_19.jpg" alt="runa_13">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_14">
+      <img class="front__face" src="img/card_20.jpg" alt="runa_14">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_14">
+      <img class="front__face" src="img/card_20.jpg" alt="runa_14">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_15">
+      <img class="front__face" src="img/card_21.jpg" alt="runa_15">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_15">
+      <img class="front__face" src="img/card_21.jpg" alt="runa_15">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_16">
+      <img class="front__face" src="img/card_22.jpg" alt="runa_16">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_16">
+      <img class="front__face" src="img/card_22.jpg" alt="runa_16">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_17">
+      <img class="front__face" src="img/card_23.jpg" alt="runa_17">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_17">
+      <img class="front__face" src="img/card_23.jpg" alt="runa_17">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_18">
+      <img class="front__face" src="img/card_24.jpg" alt="runa_18">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_18">
+      <img class="front__face" src="img/card_24.jpg" alt="runa_18">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_19">
+      <img class="front__face" src="img/card_25.jpg" alt="runa_19">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_19">
+      <img class="front__face" src="img/card_25.jpg" alt="runa_19">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_20">
+      <img class="front__face" src="img/card_26.jpg" alt="runa_20">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_20">
+      <img class="front__face" src="img/card_26.jpg" alt="runa_20">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_21">
+      <img class="front__face" src="img/card_27.jpg" alt="runa_21">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_21">
+      <img class="front__face" src="img/card_27.jpg" alt="runa_21">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_22">
+      <img class="front__face" src="img/card_28.jpg" alt="runa_22">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_22">
+      <img class="front__face" src="img/card_28.jpg" alt="runa_22">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_23">
+      <img class="front__face" src="img/card_29.jpg" alt="runa_23">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_23">
+      <img class="front__face" src="img/card_29.jpg" alt="runa_23">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_24">
+      <img class="front__face" src="img/card_30.jpg" alt="runa_24">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li>
+    <li class="memory__card" data-ragnar="runa_24">
+      <img class="front__face" src="img/card_30.jpg" alt="runa_24">
+      <img class="back__face" src="img/card_fon.jpg" alt="shirt">
+    </li> -->
+  </ul>
+  </div>
+
+   
+
+</body>
+
+</html>
